@@ -1,0 +1,511 @@
+body {
+
+font-family: 微软雅黑;
+
+}
+.container {
+  width: 100vw;
+}
+.nav {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  z-index: 999;
+  background-color: #fff;
+}
+.nav .logo img {
+  height: 55px;
+  position: absolute;
+  top: 7px;
+  left: 91px;
+}
+.nav .logo h1 {
+  position: absolute;
+  top: 15px;
+  left: 161px;
+  color: #6173f4;
+}
+.nav .nav-right {
+  float: right;
+  line-height: 70px;
+  margin-right: 89px;
+  font-weight: 500px;
+}
+.nav .nav-right ul li{
+  float: left;
+  margin-left: 20px;
+}
+.nav .nav-right ul li a {
+  text-decoration: none;
+  color: #7f7f7f;
+  font-weight: 600;
+}
+.nav .nav-right ul li a:hover {
+  color: #6173f4;
+  border-bottom: 2px solid #6173f4;
+  padding-bottom: 2px;
+}
+.carousel{
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  position: relative;
+  background-color: #f4f4f4;
+}
+.carousel #img{
+  width:100%;
+  height: 600px;
+  list-style: none;
+}
+.carousel #img li{ 
+  position: absolute;
+  top:0px;
+  left:0px;
+  opacity: 0.3;
+}
+.carousel #img li img{
+  width:100vw;
+  height: 600px; 
+}
+.carousel .lt{
+  font-size: 55px;
+  float: left;
+  position: absolute;
+  left:0px;
+  top:48%;
+  margin-top: -50px;
+  z-index: 100;
+  width: 50px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color:rgb(150,150,150);
+}
+.carousel .gt{
+  font-size: 55px;
+  position: absolute;
+  right: 0px;
+  top:48%;
+  margin-top: -50px;
+  z-index: 100;
+  width: 50px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color:rgb(150,150,150);
+}
+.carousel .gt:hover{
+  background-color: rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+.carousel .lt:hover{
+  background-color: rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+.carousel #oLi{
+  width: 190px;
+  height: 40px; 
+  position: absolute;
+  bottom:0;
+  margin-left: 45%;
+  font-size:18px;
+  z-index: 50;
+}
+.carousel #oLi #btn{
+  list-style: none;
+}
+.carousel #oLi #btn li{ 
+  box-sizing:border-box;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  line-height: 40px;
+  text-align: center;
+  float: left;
+  margin-left: 10px;  
+  background-color:rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.carousel #oLi #btn .active{
+  border:2px solid #fff;
+}
+.carousel #oLi #btn li:hover{
+  border:2px solid #fff;
+}
+.clearfix:after{
+  content: "";
+  clear: both;
+  width: 0px;
+  height: 0px;
+  display: block;
+  visibility: hidden;
+}
+.clearfix{
+  *zoom: 1;
+}
+.company{
+  /* width: 100%; */
+  width: 100%;
+  padding: 112px 0px;
+  background-color: #f4f4f4;
+   box-sizing: border-box; 
+}
+.company .container{
+  width: 1200px;
+  margin: 0 auto;
+}
+.company .containerTop{
+  text-align: center;
+  padding: 0px 15px 50px 15px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+.company .containerTop h2{
+  font-size: 50px;
+  font-weight: 300;
+  color: #444;
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+.company .containerTop .containerTops{
+  margin: 0 auto;
+  width: 750px;
+}
+.company .containerTop h3{
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #929292;
+  margin-top: 20px;
+  margin-bottom: 10px
+
+}
+.company .containerTop h2:after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #6173f4;
+  left: 50%;
+  margin-left: -40px;
+  bottom: 0;
+ }
+ .company .containerBottom>div{
+  width: 33.333%;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  float: left;
+ }
+ .company .containerBottom>div>div{
+  padding: 35px;
+  background: #fff;
+  text-align: center;
+  color: #7f7f7f;
+  margin-bottom: 70px;
+  box-sizing: border-box;
+  position: relative;
+ }
+
+ .company .containerBottom>div>div>h3{
+  text-align: center;
+  margin: 32px 0 20px 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 20px;
+  color: #444;
+ }
+ .company .containerBottom>div>div>p{
+  text-align: center;
+  color: #7f7f7f;
+  line-height: 1.8;
+  margin-bottom: 1.5em;
+ }
+ .company .containerBottom>div>div>span{
+  display: block;
+  position: absolute;
+  top: -42px;
+  left: 50%;
+  margin-left: -44px;
+ }
+ @media screen and (max-width: 1200px){
+    .company .container{
+        width: 100%;
+    }
+}
+ @media screen and (max-width: 800px){
+   .company .containerBottom>div{
+       width: 100%;
+   }
+} 
+.product {
+  width: 100%;
+  background-color: #fbfbfb;
+}
+.product .introduce {
+  width: 100%;
+  height: 900px;
+  margin: 0 auto;
+  background: #fbfbfb;
+}
+.product .introduce div {
+  float: left;
+}
+.product .introduce .person  img{
+  border-radius: 50%;
+  height: 150px;
+}
+.product .introduce .person {
+  width: 50%;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 120px;
+}
+.product .introduce .person h1{
+  font-size: 27px;
+  margin-top: 20px;
+}
+.product .introduce .person p{
+  text-transform: uppercase;
+  color: #c3c3c3;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+.product .introduce h2:after {
+  content: "";
+  height: 2px;
+  width: 100px;
+  margin:auto;
+  background-color: blue;
+  display: block;
+  margin-top: 25px;
+}
+.product .introduce h2 {
+  font-size: 50px;
+  font-weight: 300;
+  color: #444;
+  /*text-transform: uppercase;*/
+  padding-top: 100px;
+  /*display: block;*/
+  padding-bottom: 20px;
+  margin:0 auto;
+  text-align: center;
+}
+.product .introduce .h1 {
+  font-weight: 300;
+  text-align: center;
+  color: #929292;
+}
+.problem {
+  width: 100%;
+}
+.problem .programs{
+  height: auto;
+  background-color: #6173f4;
+  text-align: center;
+  overflow: hidden;
+
+}
+.problem .programs .title{
+  color: white;
+  width: 95%;
+  height: 220px;
+  margin: 117px auto;
+
+}
+
+.problem .programs .title p{
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.problem .programs .title .solid{
+  margin: 26px auto;
+  height: 2px;
+  width: 80px;
+  background-color: #ccc;
+}
+.problem .programs .title span{
+  display: block;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 25px;
+  margin-top: 30px;
+  color: rgba(255,255,255,0.5);
+}
+
+.problem .programs .info{
+  width: 100%;
+  margin:0 auto;
+}
+.problem .programs .info .same{
+  padding: 5px 15px;
+  box-sizing: border-box;
+  float: left;
+  width: 33.3%;
+  height: auto;
+  /*background-color: green;*/
+}
+@media screen and (max-width: 1024px) {
+  .problem .programs .info .same{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.problem .programs .info .left .content1{
+ height: auto;
+ margin-bottom: 100px;
+}
+
+.problem .programs .info .left .content2{
+  height: auto;
+  margin-bottom: 100px;
+}
+.problem .programs .info .center .content3{
+  margin-bottom: 100px;
+  height: auto;
+}
+.problem .programs .info .center .content4{
+  height: auto;
+  margin-bottom: 100px;
+}
+.problem .programs .info .right .content5{
+  margin-bottom: 100px;
+  height: auto;
+}
+.problem .programs .info .right .content6{
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.programs .info .same .nomal1{
+  position: absolute;
+  left: 10px;
+  top: -28px;
+  width: 56px;
+  height: 56px;
+  border-radius: 30px;
+  background-color: #6173f4;
+}
+.problem .programs .info .same .csameSpan{
+  font-style:italic;
+  font-size: 14.5px;
+  font-family: "Microsoft YaHei", "Source Sans Pro", Arial, sans-serif;
+  font-weight: 400;
+  color: #7f7f7f;
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  line-height: 24px;
+}
+.problem .programs .info .csame{
+  padding: 30px 34px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #fff;
+}
+.problem .programs .info .content4{
+  padding: 30px 40px;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+.problem .programs .info .csame:after{
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #fff;
+  position: absolute;
+  bottom: -15px;
+  left: 40px;
+}
+.problem .programs .info .same .spanfooter{
+  display: block;
+  position: relative;
+  top: 100px;
+  font-size: 19px;
+  color: white;
+}
+.connect-us .connect{
+  width: 100%;
+  padding-top: 50px;
+}
+.connect-us .connect .title1{
+  text-align: center;
+  font-size: 50px;
+  color: rgb(80,80,80);
+  margin-top: 50px; 
+}
+.connect-us .connect .title2{
+  text-align: center;
+  color: #7f7f7f;
+}
+.connect-us .connect .bottom-line{
+  width: 80px;
+  border: 2px solid rgb(97,115,224);
+  margin: 20px auto;
+}
+.connect-us .connect .container{
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+  padding: 0px;
+  margin-top: 100px; 
+}
+.connect-us .connect .container .connect-left{
+  width: 50%;
+  height: 340px;
+  float: left;
+  font-size: 18px;
+  color: #7f7f7f;
+}
+.connect-us .connect .container .connect-left p {
+  margin-top: 20px;
+}
+.connect-us .connect .container .connect-right{
+  width: 50%;
+  float: right;
+}
+.connect-us .connect .button{
+  padding-bottom: 100px;
+  padding-top: 100px;
+  width: 300px;
+  margin: 0 auto;
+  clear: both;
+}
+.connect-us .connect .connect-btn{
+  width: 350px;
+  height: 45px;
+  border-radius: 5px; 
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  background: rgb(97,115,224);
+}
+
+/*底部css样式*/
+.connect-us .footer {
+  width: 100%;
+  height: 120px;
+}
+.connect-us .footer .container{
+  width: 100%;  
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.connect-us .footer .container p{
+  text-align: center;
+  font-size: 16px;
+  color: #7f7f7f;
+}
+hr {
+  color: #eee;
+}
